@@ -169,7 +169,6 @@ img {
   margin: 0 auto;
 }
 nav {
-  margin-right: 5%;
   width: 44%;
   display: flex;
   justify-items: space-evenly;
@@ -190,14 +189,16 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.navheader {
+  border-bottom: 2px dotted black;
+  margin-bottom: 2rem;
+}
 header {
   width: 100%;
   margin-bottom: 1%;
-  border-bottom: 2px dotted black;
   display: flex;
-}
-header h1 {
-  margin-left: 22%;
+  justify-content: space-around;
+  justify-content: center;
 }
 .home .content-section {
   margin: 30px 0;
