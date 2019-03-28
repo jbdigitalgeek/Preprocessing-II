@@ -1,9 +1,12 @@
 // Mixins in here
-.btn (@justify, @align, @radius, @padding, @bgcolor, @color) {
-    justify-content: @justfiy;
-    align-items: @align;
-    border-radius:@radius;
+.btn (@justify, @align, @radius, @padding, @bgcolor, @color, @fontsize) {
+    display: flex;
+    border: 1px solid black;
+    justify-content: @justify;
+    align-content: @align;
+    border-radius: @radius;
     padding: @padding;
     background-color: @bgcolor;
     color: @color;
+    font-size: @fontsize;
 }

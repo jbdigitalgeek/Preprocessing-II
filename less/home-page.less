@@ -1,7 +1,8 @@
 .navheader {
-  border-bottom: 2px dotted black;
-  margin-bottom: 2rem;
+    border-bottom: 2px dashed silver;
+    margin-bottom: 2rem;
 }
+
 header {
     width: 100%;
     margin-bottom: 1%;
@@ -13,13 +14,12 @@ header {
 .home {
 
 
-
-
     .content-section {
         margin: 30px 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        border-top: 2px dashed silver;
 
 
 
@@ -62,15 +62,21 @@ header {
         }
     }
 
+    .btn {
+        .btn(center, center, 5px, 5px, teal, black, 4rem);
+    }
+
     .content-pick {
         padding-top: 30px;
         border-top: 2px dashed @navigation-border;
         display: flex;
         justify-content: space-between;
 
+
         .destination {
             width: 30%;
             margin-bottom: 30px;
+
         }
     }
 }

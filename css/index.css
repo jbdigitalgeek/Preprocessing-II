@@ -190,7 +190,7 @@ nav a {
   padding: 20px;
 }
 .navheader {
-  border-bottom: 2px dotted black;
+  border-bottom: 2px dashed silver;
   margin-bottom: 2rem;
 }
 header {
@@ -205,6 +205,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-top: 2px dashed silver;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -235,6 +236,17 @@ header {
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+.home .btn {
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: teal;
+  color: black;
+  font-size: 4rem;
 }
 .home .content-pick {
   padding-top: 30px;
