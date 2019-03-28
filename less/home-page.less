@@ -1,6 +1,10 @@
 .navheader {
     border-bottom: 2px dashed silver;
     margin-bottom: 2rem;
+
+    @media @mobile {
+        flex-direction: column;
+    }
 }
 
 header {
@@ -9,6 +13,11 @@ header {
     display: flex;
     justify-content: space-around;
     justify-content: center;
+
+    @media @mobile {
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 .home {
@@ -23,14 +32,26 @@ header {
 
 
 
+
         .text-content {
             width: 48%;
             padding-right: 1%;
+
+            @media @mobile {
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-around;
+            }
         }
 
         .img-content {
             width: 48%;
             padding-left: 1%;
+
+            @media @mobile {
+                width: 100%;
+                padding: 0;
+            }
 
             img {
                 border-radius: 10px;
@@ -41,6 +62,7 @@ header {
     .inverse-content {
         padding-bottom: 30px;
         border-bottom: 2px dashed @navigation-border;
+
 
         .text-content {
             padding-left: 1%;
@@ -62,23 +84,29 @@ header {
         }
     }
 
-    .btn {
-        .btn(center, center, 5px, 5px, teal, black, 4rem);
-    }
+
 
     .content-pick {
         padding-top: 30px;
         border-top: 2px dashed @navigation-border;
         display: flex;
         justify-content: space-between;
+        @media @mobile {
+          flex-direction: column;
+          width: 100%;
+        }
 
-
-        .destination {
-            width: 30%;
-            margin-bottom: 30px;
-
+        .btn {
+            .btn(center, center, 5px, 5px, teal, black, 4rem);
         }
     }
+
+    .destination {
+        width: 30%;
+        margin-bottom: 30px;
+
+    }
 }
+
 
 // home
