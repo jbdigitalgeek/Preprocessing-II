@@ -215,6 +215,7 @@ nav a {
   border-top: 2px dashed #C0C0C0;
 }
 .home .content-section .text-content {
+  margin-top: 5%;
   width: 48%;
   padding-right: 1%;
 }
@@ -226,6 +227,7 @@ nav a {
   }
 }
 .home .content-section .img-content {
+  margin-top: 5%;
   width: 48%;
   padding-left: 1%;
 }
@@ -262,6 +264,7 @@ nav a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
 }
 @media (max-width: 500px) {
   .home .content-pick {
@@ -279,6 +282,10 @@ nav a {
   }
 }
 .home .content-pick .destination .btn {
+  padding: 2.5%;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 1%;
   width: 200px;
   height: 45px;
   background-color: #17A2B8;
