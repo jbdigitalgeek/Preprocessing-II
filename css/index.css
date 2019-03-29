@@ -175,6 +175,11 @@ nav {
   justify-items: space-around;
   justify-content: flex-end;
 }
+@media (max-width: 500px) {
+  nav {
+    justify-content: space-between;
+  }
+}
 nav a {
   text-decoration: none;
   margin: 0 auto;
@@ -199,12 +204,28 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .navheader header {
+    width: 100%;
+    align-items: center;
+  }
+}
 .navheader header h1 {
-  margin: 2%;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .navheader header h1 {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
 }
 @media (max-width: 500px) {
   .navheader header {
-    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .home .content-section {
@@ -233,8 +254,9 @@ nav a {
 }
 @media (max-width: 500px) {
   .home .content-section .img-content {
+    align-content: center;
     width: 100%;
-    padding: 0;
+    object-fit: fill;
   }
 }
 .home .content-section .img-content img {
@@ -243,6 +265,11 @@ nav a {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
