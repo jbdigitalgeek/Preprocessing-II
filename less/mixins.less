@@ -1,12 +1,10 @@
 // Mixins in here
-.btn (@justify, @align, @radius, @padding, @bgcolor, @color, @fontsize) {
-    display: flex;
-    border: 1px solid black;
-    justify-content: @justify;
-    align-content: @align;
-    border-radius: @radius;
-    padding: @padding;
-    background-color: @bgcolor;
-    color: @color;
-    font-size: @fontsize;
+.button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid @silver;
+    cursor: pointer;
+    font-size: @font-size;
 }
